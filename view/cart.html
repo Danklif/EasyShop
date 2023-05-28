@@ -15,9 +15,15 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" href="../styles/loader.css" />
 </head>
 
 <body class="light-mode">
+  <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="loader-spinner"></div>
+  </div> 
+
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
@@ -63,8 +69,9 @@
   </main>
 
   <div class="fixed-bottom text-center py-3">
-    <button class="btn btn-large btn-success">Comprar <i class="ri-money-dollar-circle-fill"></i></button>
-    <button class="btn btn-large btn-danger">Limpiar <i class="ri-delete-bin-7-fill"></i></button>
+    <p id="total-label">Subtotal: $0</p>
+    <button class="btn btn-large btn-success" id="btnBuyCart">Comprar <i class="ri-money-dollar-circle-fill"></i></button>
+    <button class="btn btn-large btn-danger" id="btnDropCart">Limpiar <i class="ri-delete-bin-7-fill"></i></button>
   </div>
 
   <br><br><br>
@@ -85,6 +92,7 @@
   <!-- Custom JS -->
   <script type="module" src="../javascript/cart.js"></script>
   <script type="module" src="../javascript/darkmode.js"></script>
+  <script type="module" src="../javascript/loader.js"></script>
 </body>
 
 </html>

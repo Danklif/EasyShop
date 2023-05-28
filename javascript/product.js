@@ -24,6 +24,14 @@ function generateProduct(item, distribution, type = "add") {
         this.onerror = null
         this.src = '../img/default.png'
         this.parentElement.className = "p-4"
+        Swal.fire({
+            position: 'top-end',
+            icon: 'error',
+            text: 'Ocurrió un error al cargar las imágenes de algunos productos',
+            showConfirmButton: false,
+            timer: 8000,
+            toast: true,
+        })
     }
 
     // Crear un nuevo elemento 'div' con la clase 'card-body'
@@ -141,17 +149,95 @@ function removeFromCart(event) {
         }
     })
 
-    cart.items.forEach(cartItem => {
-        generateProduct(cartItem, "col-lg-2 col-md-4 col-sm-6", "delete")
+    var total = 0
+    var totalLabel = document.getElementById("total-label");
+
+    cart.items.forEach(item => {
+        generateProduct(item, "col-lg-2 col-md-4 col-sm-6", "delete")
+        total += item.price.split('$')[1] * item.quantity
     });
+
+    if (cart.items.length === 0) {
+        total = 0
+    }
+
+    totalLabel.innerText = `Subtotal: $${total}`
 
     saveCart()
 }
 
 function dropCart() {
-    document.getElementById("product-container").innerHTML = ""
-    cart = {items: []}
-    saveCart()
+    var totalLabel = document.getElementById("total-label");
+    if (cart.items.length > 0) {
+        Swal.fire({
+            title: '¿Está seguro?',
+            showCancelButton: true,
+            confirmButtonText: 'Limpiar',
+            confirmButtonColor: '#d33',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById("product-container").innerHTML = ""
+                cart = {items: []}
+                saveCart()
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'info',
+                    text: 'Se ha limpiado el carrito.',
+                    showConfirmButton: false,
+                    timer: 4000,
+                    toast: true,
+                })
+                totalLabel.innerText = `Subtotal: $0`
+            }
+        })
+    } else {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'info',
+            text: 'Su carrito está vacío.',
+            showConfirmButton: false,
+            timer: 4000,
+            toast: true,
+        })
+    }
+}
+
+function buyCart() {
+    var totalLabel = document.getElementById("total-label");
+    if (cart.items.length > 0) {
+        Swal.fire({
+            title: '¿Desea comprar este carrito?',
+            text: `Su compra tiene un valor total de${totalLabel.innerText.split(':')[1]}`,
+            showCancelButton: true,
+            confirmButtonText: 'Comprar',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById("product-container").innerHTML = ""
+                cart = {items: []}
+                saveCart()
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    text: '¡Compra exitosa!',
+                    showConfirmButton: false,
+                    timer: 4000,
+                    toast: true,
+                })
+                totalLabel.innerText = `Subtotal: $0`
+            }
+        })
+    } else {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'info',
+            text: 'Su carrito está vacío.',
+            showConfirmButton: false,
+            timer: 4000,
+            toast: true,
+        })
+    }
 }
 
 function saveCart() {
@@ -163,4 +249,4 @@ function loadCart() {
     return cart
 }
 
-export default{generateProduct, saveCart, loadCart}
+export default{generateProduct, saveCart, loadCart, dropCart, buyCart}
