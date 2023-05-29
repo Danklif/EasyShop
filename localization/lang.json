@@ -1,0 +1,69 @@
+{
+    "global": {
+        "home": {
+            "es": "Inicio",
+            "en": "Home"
+        },
+        "catalogue": {
+            "es": "Productos",
+            "en": "Catalogue",
+            "list": {
+                "home": {
+                    "es": "Hogar",
+                    "en": "Home"
+                },
+                "beauty": {
+                    "es": "Belleza",
+                    "en": "Beauty"
+                },
+                "cuisine": {
+                    "es": "Cocina",
+                    "en": "Cuisine"
+                },
+                "toys": {
+                    "es": "Juguetería",
+                    "en": "Toys"
+                }
+            }
+        },
+        "cart": {
+            "es": "Carrito",
+            "en": "Cart"
+        },
+        "product": {
+            "es": "Producto",
+            "en": "Product"
+        },
+        "add": {
+            "es": "Agregar al carrito",
+            "en": "Add to cart"
+        },
+        "remove": {
+            "es": "Remover",
+            "en": "Remove"
+        },
+        "quantity": {
+            "es": "Cantidad",
+            "en": "Quantity"
+        },
+        "footer": {
+            "es": "© 2023 EasyShop. Todos los derechos reservados.",
+            "en": "© 2023 EasyShop. All rights reserved."
+        }
+    },
+    "index": {
+        "header": {
+            "es": "Bienvenido a EasyShop",
+            "en": "Welcome to EasyShop"
+        },
+        "description": {
+            "es": "Explora nuestro catálogo y encuentra los productos que necesitas de manera rápida y sencilla.",
+            "en": "Explore our catalogue and find the products that you need as quick and easy."
+        },
+        "featured": {
+            "es": "Nuestros productos destacados",
+            "en": "Our featured products"
+        }
+    } 
+}
+  
