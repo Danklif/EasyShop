@@ -11,11 +11,6 @@ footer {
   width: 100%;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-  color: var(--nav-link-hover-color);
-  background-color: var(--nav-link-hover-background);
-}
-
 @media (max-width: 578px) {
   #product-container {
     height: 480px;
