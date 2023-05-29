@@ -31,4 +31,3 @@ EasyShop es una plataforma de compras en línea diseñada con un enfoque en la u
 | Claro | ![#CFE5EE](https://via.placeholder.com/10/cfe5ee?text=+) #CFE5EE |
 | Hover | ![#87CDEB](https://via.placeholder.com/10/87cdeb?text=+) #87CDEB |
 | Muted | ![#5D676B](https://via.placeholder.com/10/5d676b?text=+) #5D676B |
-| Oscuro | ![#69A0B8](https://via.placeholder.com/10/69a0b8?text=+) #69A0B8 |
