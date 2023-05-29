@@ -1,7 +1,7 @@
 
 # EasyShop
 
-[![Versión](https://img.shields.io/badge/release-v0.0.1-blue)]()
+[![Versión](https://img.shields.io/badge/release-v1.0.0-blue)]()
 
 EasyShop es una plataforma de compras en línea diseñada con un enfoque en la usabilidad y la accesibilidad web. Nuestro objetivo es proporcionar a los usuarios una experiencia de compra sencilla y sin complicaciones, independientemente de su nivel de experiencia en la navegación web.
 
@@ -15,23 +15,20 @@ EasyShop es una plataforma de compras en línea diseñada con un enfoque en la u
 
 * Catálogo diverso: EasyShop ofrece una amplia gama de productos de diferentes categorías para satisfacer las necesidades y preferencias de nuestros usuarios. Desde electrónica hasta moda y hogar, encontrarás todo lo que necesitas en un solo lugar.
 
-* Seguridad y privacidad: Nos tomamos en serio la seguridad y privacidad de nuestros usuarios. Implementamos medidas de seguridad robustas para proteger la información personal y los datos de pago.
-
-
 
 ## Autores
 
 - [@Jose](https://www.github.com/danklif)
-- [@Jessica](https://www.github.com/)
-- [@Julian](https://www.github.com/)
-- [@Lina](https://www.github.com/)
+- [@Jessica](https://www.github.com/jvnino)
+- [@Julian](https://www.github.com/cebans)
+- [@Lina](https://www.github.com/ylinafernandao)
 
 ## Guía de Color
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
-
+| Azul Base | ![#3D5D6B](https://via.placeholder.com/10/3d5d6b?text=+) #3D5D6B |
+| Claro | ![#CFE5EE](https://via.placeholder.com/10/cfe5ee?text=+) #CFE5EE |
+| Hover | ![#87CDEB](https://via.placeholder.com/10/87cdeb?text=+) #87CDEB |
+| Muted | ![#5D676B](https://via.placeholder.com/10/5d676b?text=+) #5D676B |
+| Oscuro | ![#69A0B8](https://via.placeholder.com/10/69a0b8?text=+) #69A0B8 |
