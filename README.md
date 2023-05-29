@@ -2,6 +2,7 @@
 # EasyShop
 
 [![Versión](https://img.shields.io/badge/release-v1.0.0-blue)]()
+[![Localización](https://img.shields.io/badge/localized-72%25-green)]()
 
 EasyShop es una plataforma de compras en línea diseñada con un enfoque en la usabilidad y la accesibilidad web. Nuestro objetivo es proporcionar a los usuarios una experiencia de compra sencilla y sin complicaciones, independientemente de su nivel de experiencia en la navegación web.
 
