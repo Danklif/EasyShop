@@ -1,3 +1,5 @@
+import lang from "../localization/lang.json" assert {type:"json"}
+
 let cart = {items: []}
 
 function generateProduct(item, distribution, type = "add") {
@@ -57,16 +59,16 @@ function generateProduct(item, distribution, type = "add") {
         // Crear un elemento 'button' con la clase 'btn btn-primary' y establecer el texto
         var button = document.createElement("button");
         button.className = "btn btn-primary";
-        button.textContent = "Agregar al carrito";
+        button.textContent = `${document.querySelector('html').lang === "es" ? lang.global.add.es : lang.global.add.en}`;
         button.addEventListener('click', addToCart)
     } else {
         // Crear un elemento 'button' con la clase 'btn btn-danger' y establecer el texto
         var button = document.createElement("button");
         button.className = "btn btn-danger";
-        button.textContent = "Remover";
+        button.textContent = `${document.querySelector('html').lang === "es" ? lang.global.remove.es : lang.global.remove.en}`;
         button.addEventListener('click', removeFromCart)
 
-        description.textContent = `Cantidad: ${item.quantity}`
+        description.textContent = `${document.querySelector('html').lang === "es" ? lang.global.quantity.es : lang.global.quantity.en}: ${item.quantity}`
     }
     
     cardBodyDiv.appendChild(title);
@@ -171,6 +173,7 @@ function dropCart() {
     if (cart.items.length > 0) {
         Swal.fire({
             title: '¿Está seguro?',
+            text: 'Esta acción no se puede deshacer.',
             showCancelButton: true,
             confirmButtonText: 'Limpiar',
             confirmButtonColor: '#d33',
@@ -211,6 +214,7 @@ function buyCart() {
             text: `Su compra tiene un valor total de${totalLabel.innerText.split(':')[1]}`,
             showCancelButton: true,
             confirmButtonText: 'Comprar',
+            confirmButtonColor: '#198754',
             cancelButtonText: 'Cancelar'
         }).then((result) => {
             if (result.isConfirmed) {

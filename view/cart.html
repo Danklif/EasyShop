@@ -39,14 +39,10 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="ri-shopping-basket-2-fill"></i> Productos</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Categoría 1</a></li>
-              <li><a class="dropdown-item" href="#">Categoría 2</a></li>
-              <li><a class="dropdown-item" href="#">Categoría 3</a></li>
-            </ul>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  id="catalogue-list"></ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="ri-shopping-cart-fill"> </i>Carrito</i></a>
+            <a class="nav-link" href="./cart.html" id="test"><i class="ri-shopping-cart-fill"> </i>Carrito</i></a>
           </li>
         </ul>
       </div>
@@ -63,12 +59,12 @@
 
     <section class="product-section">
       <div class="container">
-        <div class="row" id="product-container"></div>
+        <div class="row text-muted" id="product-container"></div>
       </div>
     </section>
   </main>
 
-  <div class="fixed-bottom text-center py-3">
+  <div class="fixed-bottom text-center py-3 mt-5">
     <p id="total-label">Subtotal: $0</p>
     <button class="btn btn-large btn-success" id="btnBuyCart">Comprar <i class="ri-money-dollar-circle-fill"></i></button>
     <button class="btn btn-large btn-danger" id="btnDropCart">Limpiar <i class="ri-delete-bin-7-fill"></i></button>
@@ -93,6 +89,7 @@
   <script type="module" src="../javascript/cart.js"></script>
   <script type="module" src="../javascript/darkmode.js"></script>
   <script type="module" src="../javascript/loader.js"></script>
+  <script type="module" src="../javascript/navbar.js"></script>
 </body>
 
 </html>

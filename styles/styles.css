@@ -4,37 +4,28 @@ html {
   overflow-x: hidden;
 }
 
-/* Estilos para el modo claro */
 .light-mode {
-  /* Aquí puedes definir los estilos para el modo claro */
-  /* Por ejemplo, puedes cambiar los colores de fondo y texto */
   background-color: #ffffff;
   color: #333333;
 }
 
-/* Estilos para el modo oscuro */
 .dark-mode {
-  /* Aquí puedes definir los estilos para el modo oscuro */
-  /* Por ejemplo, puedes cambiar los colores de fondo y texto */
   background-color: #333333;
   color: #ffffff;
 }
 
-/* Estilos adicionales para el modo claro */
 .light-mode footer,
 .light-mode .navbar {
   background-color: #f8f9fa !important;
   color: #333333 !important;
 }
 
-/* Estilos adicionales para el modo oscuro */
 .dark-mode footer,
 .dark-mode .navbar {
   background-color: #343a40 !important;
   color: #ffffff !important;
 }
 
-/* Estilos para el footer fijo en la parte inferior */
 footer {
   position: fixed;
   left: 0;
@@ -42,14 +33,12 @@ footer {
   width: 100%;
 }
 
-/* Estilos para el botón de cambiar de modo */
 #mode-toggle {
   background-color: transparent;
   border: none;
   padding: 0;
 }
 
-/* Estilos para la imagen del modo */
 .mode-icon {
   width: 32px;
   height: 32px;
@@ -73,4 +62,16 @@ footer {
   left: 0;
   width: 100%;
   background-color: #f8f9fa;
+}
+
+.rounded-img {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 256px;
+  height: 256px;
+}
+
+.rounded-img img {
+  width: 100%;
+  height: 100%;
 }
