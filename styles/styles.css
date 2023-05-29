@@ -4,44 +4,11 @@ html {
   overflow-x: hidden;
 }
 
-.light-mode {
-  background-color: #ffffff;
-  color: #333333;
-}
-
-.dark-mode {
-  background-color: #333333;
-  color: #ffffff;
-}
-
-.light-mode footer,
-.light-mode .navbar {
-  background-color: #f8f9fa !important;
-  color: #333333 !important;
-}
-
-.dark-mode footer,
-.dark-mode .navbar {
-  background-color: #343a40 !important;
-  color: #ffffff !important;
-}
-
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-}
-
-#mode-toggle {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-
-.mode-icon {
-  width: 32px;
-  height: 32px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
