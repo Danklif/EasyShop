@@ -6,6 +6,8 @@
 
 EasyShop es una plataforma de compras en línea diseñada con un enfoque en la usabilidad y la accesibilidad web. Nuestro objetivo es proporcionar a los usuarios una experiencia de compra sencilla y sin complicaciones, independientemente de su nivel de experiencia en la navegación web.
 
+*Disclaimer: Este proyecto fue una tarea para una asignatura de la materia Usabilidad y Accesibilidad Web. Los contenidos aquí descritos son ficticios.*
+
 ## Características principales:
 
 * Interfaz intuitiva: Diseñada con una interfaz de usuario simple y fácil de usar, EasyShop permite a los usuarios encontrar rápidamente los productos que desean y realizar compras con facilidad.
